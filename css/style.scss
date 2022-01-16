@@ -1,0 +1,546 @@
+@import url(nulestyle.css);
+body{
+   min-height: 100%;
+   min-width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #333333;
+   color: white;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   position: relative;
+}
+._container {
+   max-width: 1300px;
+   margin: 0 auto;
+}
+.page__header {
+}
+.page__main {
+}
+//---------------------------------------Header
+.header {
+   width: 100%;
+}
+.header__container {
+}
+//_________Навигация
+.nav {
+   z-index: 5;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   width: 100%;
+   @media (max-width:642px) {
+   justify-content: center;
+   }
+}
+.logo {
+   color: rgba($color: white, $alpha: 1);
+   font-size: 50px;
+@media (max-width:1024px) {
+margin:  0 0 20px 0 ;
+}
+}
+.form1 {
+}
+.search {
+   width: 300px;
+   height: 50px;
+   background-color: rgba($color: white, $alpha: 1);
+   display: inline-block;
+}
+.search::placeholder{
+   font-weight: 800;
+   color: rgba($color: #000000, $alpha: 0.5);
+}
+//____________________--Месяцы
+.mouths__cont {
+   display: flex;
+   word-spacing: 2px;
+   @media (max-width:642px) {
+      justify-content: center;
+      }
+      & i {
+         margin:  2px 5px;
+      }
+}
+.mount__cont2 {
+   display: flex;
+   flex-direction: column;
+}
+.mouths{
+   width: 20px;
+   height: 20px;
+   margin:  0 0 0 15px;
+   background-color: #666666;
+   transition: 1000ms;
+   position: relative;
+}
+.this__mouth{
+   width: 2px;
+   height: 2px;
+   background-color: #666666;
+   border: 2px solid black;
+   transition: 1000ms;
+   overflow: hidden;
+   writing-mode: vertical-rl;
+   text-orientation: upright;
+}
+.mouth__circle{
+   position: absolute;
+   top: 15%;
+   left: 15%;
+   width: 70%;
+   height: 70%;
+   z-index: 2;
+   border-radius: 60%;
+   background-color: #666666;
+}
+.mouth{
+   transition: 1000ms;
+   position: absolute;
+   top: 2%;
+   left: 48%;
+   width: 10px;
+   height: 96%;
+   background-color: #fff;
+}
+.form__mounth{
+   transition: 1000ms;
+   overflow: hidden;
+   width: 1px;
+   height: 1px;
+   background-color: #fff;
+   margin: 0 0 0 16px;
+}
+.search__mounth{
+   font-size: 40px;
+}
+.mouth1{
+   height: 50%;
+   color: black;
+}
+.mouth2{
+   height: 50%;
+   color: black;
+}
+//____________________________________---MAIN
+//____________________ФИЛЬМЫ
+.main {
+   margin: 40px 0 0 0 ;
+}
+.main__container {
+}
+
+.main__movie {
+}
+.movie__block-cont {
+   font-size: 70px;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   @media (max-width:690px) {
+      justify-content: center;
+   }
+}
+//_____________________________________БЛОК ФИЛЬМА
+.movie__block {
+   margin:  20px 20px 10px 20px;
+   width: 300px;
+   position: relative;
+}
+.block-movie__psevdoAfter{
+   position: absolute;
+   width: 300px;
+   height: 300px;
+   top: 50%;
+   left: 50%;
+   background-color: #fff;
+   color: black;
+   opacity: 0.3;
+   display: none;
+}
+.block-movie__prev {
+   position: relative;
+width: 300px;
+height: 500px;
+}
+.block-movie__img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+.block-movie__rev {
+   background-color: #333333;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   top: 3%;
+   left: 3%;
+   position: absolute;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 800;
+   font-size: 20px;
+}
+.block-movie__info {
+}
+.block-movie__author {
+   font-size: 45px;
+   font-weight: 600;
+}
+.block-movie__genres {
+   color: #FF9900;
+   font-size: 20px;
+   font-weight: 600;
+}
+.rev-red{
+   border: 4px solid red;
+   color: red;
+   }
+   .rev-green{
+      color: #339900;
+      border: 4px solid #339900;
+   }
+   .rev-yellow{
+      color: #FFFF33;
+      border: 4px solid #FFFF33;
+   }
+   .rev-Nan{
+      color: #FF00FF;
+      border: 4px solid #FF00FF;
+   }
+
+//
+.btns__mov {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   margin: 10px 0 30px 0 ;
+}
+.button__mov {
+   width: 150px;
+   height: 150px;
+   font-size: 80px;
+   color: white;
+   background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+//______________________________---ОПИСАНИЕ ПО ID
+
+.des {
+   overflow: hidden;
+   width: 80%;
+   min-height: 90%;
+   position: fixed;
+   background-color: rgba($color: #666666, $alpha: 0.95);
+   top: 2%;
+   left: 10%;
+   z-index: 20;
+   padding: 30px;
+   display: none;
+   @media (max-width:1100px) {
+   width: 100%;
+   left: 0;
+   }
+   @media (max-width:670px) {
+      padding: 19px;
+      min-height: 100%;
+      max-height: 100%;
+   }
+   @media (max-width:501px) {
+   padding: 10px;
+   }
+}
+.des__left {
+   & img{
+      margin-right: 20px;
+      width: 20vw;
+      height: 100%;
+         display: inline-block;
+         @media (max-width:1100px) {
+         height: 80%;
+         }
+         @media (max-width:900px) {
+            width: 30vw;
+         }
+         @media (max-width:800px) {
+         display: none;
+         }
+   }
+}
+.des__right {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+.des__titles {
+}
+.des__title {
+   word-spacing: 4px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: white;
+   font-size: 50px;
+   font-weight: 300;
+   margin-bottom: 8px;
+   @media (max-width:800px) {
+      margin: 8% 0 0 0 ;
+   }
+   @media (max-width:400px) {
+   font-size: 30px;
+   margin: 12% 0 0 0 ;
+   }
+}
+.des__genres {
+   margin-bottom: 16px;
+   word-spacing: 10px;
+   color: #FF9900;
+   font-size: 20px;
+   font-weight: 600;
+}
+.des__text {
+font-size: 18px;
+margin-bottom: 20px;
+letter-spacing:0.05px;
+@media (max-width:760px) {
+display: none;
+}
+}
+.des__pages{
+   display: inline-block;
+   font-size: 10px;
+   margin: 5px 0 ;
+   font-size: 30px;
+   @media (max-width:501px) {
+      padding: 20px;
+   background-color: rgba($color: #181818 , $alpha: 1.0);
+   }
+}
+.des__pages :first-child {
+   text-decoration: underline;
+}
+.des__pages li{
+   margin: 0  14px 10px  0 ;
+   display: inline-block;
+   @media (max-width:421px) {
+      margin: 0  5px 5px  0 ;
+   }
+}
+.des__top{
+   display: flex;
+}
+.des-top__block{
+   width: 100%;
+   transition: 500ms;
+   min-height: 410px;
+   max-height: 410px;
+@media (max-width:501px) {
+   min-height: 350px;
+   max-height: 350px;
+   padding: 10px;
+background-color: rgba($color: #190000, $alpha: 1.0);
+}
+}
+//_____________________ХАРАКТЕРИСТИКИ     
+.des__ul{
+   flex-direction: column;
+}
+.des__ul li{
+font-size: 20px;
+font-style: italic;
+margin: 4px 0 ;
+border: 2px solid black;
+background-color: rgba(#333333,0.90);
+padding: 10px;
+@media (max-width:421px) {
+   overflow: scroll;
+   font-size: 15px;
+   padding: 6px;
+   margin: 2px 0 ;
+}
+}
+
+
+.des__cross i {
+   text-shadow: 2px 2px black;
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   font-size: 30px;
+   color: white;
+   top: 5%;
+   right: 2%;
+}
+
+//_________АКТЕРЫ
+
+
+.des__actors {
+   overflow: scroll;
+   display: flex;
+   flex-wrap: wrap;
+   display: none;
+   @media (max-width:375px) {
+   justify-content: center;
+   }
+}
+.actor__block {
+   height: 220px;
+   width: 22%;
+   margin: 1.5%;
+   @media (max-width:900px) {
+   width: 32%;
+   margin: 0.5%;
+   }
+   @media (max-width:680px) {
+   width: 49%;
+   height: 100%;
+   }
+   @media (max-width:375px) {
+   width: 78%;
+   }
+}
+.actor__image {
+   padding: 5px;
+   height: 80%;
+   width: 100%;
+   background-color: #333333;
+   border: 2px solid black;
+}
+.actor__image img{
+   height: 100%;
+   width: 100%;
+}
+.actor__name {
+font-size: 20px;
+}
+.actor__job {
+   font-size: 16px;
+   color: #FF9900;
+}
+//____________ФАКТЫ
+
+.des__facts {
+   display: flex;
+   flex-wrap: wrap;
+   border: 2px solid black;
+   background-color: rgba(#333333,0.90);
+   display: none;
+   margin:  0 10px;
+   padding: 20px;
+   @media (max-width:1024px) {
+   overflow: scroll;
+   }
+}
+.des-facts__li{
+   display: inline-block;
+   min-height: 100px;
+   min-width: 200px;
+color: #FF9900;
+}
+.des-facts__li a {
+   color: white;
+}
+.spoiler{
+   font-size: 40px;
+   color: red;
+}
+.des__rev{
+   overflow: scroll;
+   padding: 20px;
+   letter-spacing: 0.4px;
+   line-height: 150%;
+   margin:  0 10px;
+   border: 2px solid black;
+   background-color: rgba(#333333,0.90);
+   display: none;
+   color: #FF9900;
+   flex-direction: column;
+}
+.des__rev p {
+   font-size: 15px;
+   font-weight: 700;
+}
+.rev__title{
+   margin: 0 0 20px 0 ;
+   color: white;
+   font-size: 32px;
+}
+.rev__autor{
+   margin: 10px 0  20px 80%;
+   color: #FF6600;
+   font-style: italic;
+   font-size: 25px;
+}
+//Картинки 
+.des__imgs{
+   overflow: scroll;
+   display: none;
+   flex-wrap: wrap;
+}
+
+.des__movie-images{
+      padding:10px;
+      margin: 15px 2%;
+      height: 300px;
+      width: 45%;
+      background-color: #333333;
+      border: 2px solid black;
+      min-width: 200px;
+      @media (max-width:800px) {
+         width: 100%;
+      }
+   }
+   .des__movie-images img{
+      height: 100%;
+      width: 100%;
+   }
+.search__kinopoisk{
+      background-color: #FF9900;
+      font-size: 20px;
+      width: 150px;
+      border: 2px solid black;
+      @media (max-width:1024px) {
+         position: absolute;
+         left: 4px;
+         top: 4px;
+      }
+   & a{
+      font-weight: 700;
+      color: black;
+}
+}
+.des__description{
+   display: none;
+   background-color: #333333;
+   border: 2px solid black;
+   color: white;
+   font-size: 18px;
+}
+//___________________----footer
+
+.footer {
+   width: 100%;
+   background-color: black;
+}
+.footer__container {
+   width: 100%;
+}
+.footer__text {
+   background-color: black;
+   padding: 10px 30px;
+width: 100%;
+font-size: 40px;
+color: white;
+}
+.footer__text a {
+   text-shadow: 2px 2px black;
+   color: #FF9900;
+}
+//_______________________-ФАКТЫ
