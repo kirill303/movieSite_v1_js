@@ -1,7 +1,7 @@
 //___________________________----МЕШУРА
 
 const API__get__ID = 'https://kinopoiskapiunofficial.tech/api/v2.2/films/';
-const API_key = `e63e194e-0c87-473e-ad3d-900519512636`;
+const API_key = `сюда ваш ключ`;
 const API_base__url = `https://kinopoiskapiunofficial.tech/api/v2.1/films/releases?year=2018&month=OCTOBER&page=1`;
 const API__get__actor = 'https://kinopoiskapiunofficial.tech/api/v1/staff?filmId=';
 const API_get_KeyWord = 'https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword?';
